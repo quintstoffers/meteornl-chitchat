@@ -1,0 +1,14 @@
+nav.top-nav {
+    height: 122px;
+}
+
+.page-title {
+    line-height: 122px;
+    font-size: 48px;
+}
+
+.message-list {
+    max-height: 500px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
