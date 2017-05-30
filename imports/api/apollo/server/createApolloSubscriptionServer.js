@@ -5,7 +5,7 @@ const WS_URL = process.env.WS_URL || `localhost:4005`;
 const wsUrlParts = WS_URL.split(':');
 const WS_PORT = wsUrlParts[wsUrlParts.length - 1];
 
-Meteor.settings.public.WS_URL = process.env.WS_URL || `localhost:4005`;
+Meteor.settings.public.WS_URL = process.env.WS_URL || `ws://localhost:4005`;
 
 function createApolloSubscriptionServer({ subscriptionManager }) {
     const httpServer = createServer((request, response) => {
